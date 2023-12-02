@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "adventofcode"
+version = "0.1.0"
+description = "Solutions for Advent of Code in Python"
+authors = ["Chris Neave <chrispneave@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+flake8 = "^6.1.0"
+coverage = "^7.2.7"
+jmespath = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+# omit = [".*", "*/site-packages/*"]
+
+[tool.coverage.report]
+fail_under = 100
